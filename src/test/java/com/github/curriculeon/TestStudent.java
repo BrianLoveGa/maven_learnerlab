@@ -5,9 +5,23 @@ import org.junit.Test;
 
 public class TestStudent {
 
+    Long id = 9L;
+    String x = "testname";
+
+
     @Test
     public void testImplementation(){
-        Assert.assertTrue(new Student(0L,"greg")instanceof Person);
+        Assert.assertTrue(new Student(id,x)instanceof Learner);
 
     }
+
+    @Test
+    public void testInheritance(){
+        Assert.assertTrue(new Student(id,x)instanceof Person);
+    }
+
+
+
+
+
 }
