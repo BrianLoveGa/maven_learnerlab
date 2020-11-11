@@ -14,7 +14,7 @@ public class Student extends Person implements Learner {
     }
 
     @Override
-    public Double getTotalStudy() {
+    public Double getTotalStudyTime() {
         return totalStudyTime;
     }
 }
