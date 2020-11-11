@@ -9,7 +9,7 @@ import org.junit.runners.Suite;
         TestInstructor.class,
         TestPerson.class,
         TestStudent.class,
-        TestPeople.class,
+        //TestPeople.class,
         TestStudents.class,
         TestInstructors.class,
 })

@@ -1,6 +1,6 @@
 package com.github.curriculeon;
 
-public final class Students extends People{
+public final class Students extends People<Student>{
     // eager implementation
     private static final Students INSTANCE = new Students();
 
@@ -17,5 +17,12 @@ public final class Students extends People{
 
     public static Students getInstance(){
         return INSTANCE;
+    }
+
+    @Override
+    public Student[] toArray() {
+        Student[] arrayToBePopulated = new Student[0];
+        Student[] populatedArray = personList.toArray(arrayToBePopulated);
+        return populatedArray;
     }
 }
