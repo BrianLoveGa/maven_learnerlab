@@ -9,7 +9,7 @@ import java.util.List;
 public class TestInstructors {
     @Test
     public void testInstanceInstructors() {
-        String[] names = "Fred,Jothi,Leon,David".split(",");
+        String[] names = "Leon,Fred,David,Jothi".split(",");
         List<String> nameList = Arrays.asList(names);
 
         for(Person person : Instructors.getInstance()){

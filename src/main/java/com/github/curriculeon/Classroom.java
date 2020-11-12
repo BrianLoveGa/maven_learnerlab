@@ -33,15 +33,13 @@ public enum Classroom {
     // overloaded method
     public void hostLecture(Long idOfInstructor, double numberOfHours) {
         Instructors instructorsSingleton = Instructors.getInstance();
-        Person instructorAsPerson = instructorsSingleton.findById(idOfInstructor);
-        Teacher instructorAsTeacher = (Teacher) instructorAsPerson;
-        hostLecture(instructorAsTeacher, numberOfHours);
+        Teacher teacher = instructorsSingleton.findById(idOfInstructor);
+        hostLecture(teacher, numberOfHours);
     }
 
     public Map<Student, Double> getStudyMap() {
         Map<Student, Double> map = new HashMap<>();
-        for (Person person : Students.getInstance()) {
-            Student student = (Student) person;
+        for (Student student : Students.getInstance()) {
             Double totalStudyTime = student.getTotalStudyTime();
             map.put(student, totalStudyTime);
         }

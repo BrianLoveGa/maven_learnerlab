@@ -6,12 +6,12 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        TestInstructor.class,
+       // TestInstructor.class,
         TestPerson.class,
         TestStudent.class,
-        //TestPeople.class,
+        TestPeople.class,
         TestStudents.class,
-        TestInstructors.class,
+        // TestInstructors.class,  run separate due to 'singleton exception'
 })
 public class TestAllSuite {
 }
