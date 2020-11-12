@@ -10,13 +10,17 @@ public enum Educator implements Teacher {
     JOTHI(3L, "Jothi"),
     DAVID(4L, "David");
 
-    private final Instructor instructor;
+    public final Instructor instructor;
 
     public double getTimeWorked() {
         return timeWorked;
     }
 
-    private double timeWorked;
+    public double timeWorked;
+
+    public Instructor getInstructor() {
+        return instructor;
+    }
 
     Educator(Long id, String name){
         this.instructor = new Instructor(id, name);

@@ -11,5 +11,80 @@ package com.github.curriculeon;
 
 // test get time worked works ...
 
+import com.github.curriculeon.interfaces.Teacher;
+import com.github.curriculeon.models.*;
+import org.junit.Assert;
+import org.junit.Test;
+
 public class TestEducator {
+
+    @Test
+    public void testImplementation(){
+        // given
+
+        Educator educator =  Educator.FRED;
+
+        // when
+
+
+        boolean results = educator instanceof Teacher;
+        Long id = educator.instructor.getId();
+
+        // then
+
+        Assert.assertEquals(id, Educator.FRED.instructor.getId());
+        Assert.assertTrue(results);
+    }
+
+    @Test
+    public void testInheritance(){
+        // given
+
+        Educator educator = Educator.DAVID;
+
+        // when
+
+       //   boolean wellIsIt = educator instanceof People;   ... /// it is not
+
+
+
+        // then
+
+
+
+    }
+    @Test
+    public void testEducatorCanTeach(){
+        // given
+
+
+        // when
+
+
+        // then
+    }
+
+    @Test
+    public void testEducatorCanLecture(){
+        // given
+
+
+        // when
+
+
+        // then
+    }
+
+    @Test
+    public void testEducatorGetTimeWorked(){
+        // given
+
+
+        // when
+
+
+        // then
+    }
+
+
 }

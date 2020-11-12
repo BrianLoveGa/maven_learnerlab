@@ -21,7 +21,7 @@ public class TestPeople {
             }
         };
 
-        Person expected = new Person(magicNumber, null);
+        Person expected = new Person(magicNumber, "lemmie");
         people.add(expected);
         Assert.assertTrue(people.contains(expected));
 
@@ -62,5 +62,6 @@ public class TestPeople {
 
         // true
     }
+
 
 }
