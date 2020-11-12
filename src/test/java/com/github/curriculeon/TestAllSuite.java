@@ -11,7 +11,8 @@ import org.junit.runners.Suite;
         TestStudent.class,
         TestPeople.class,
         TestStudents.class,
-        TestInstructors.class, // run separate due to 'singleton exception'
+        TestInstructors.class, // run separate due to 'singleton exception' some times fails
+        TestClassroom.class,
 })
 public class TestAllSuite {
 }
