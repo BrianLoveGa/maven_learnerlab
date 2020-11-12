@@ -1,7 +1,10 @@
-package com.github.curriculeon;
+package com.github.curriculeon.models;
+
+import com.github.curriculeon.interfaces.Learner;
+import com.github.curriculeon.interfaces.Teacher;
 
 public class Instructor extends Person implements Teacher {
-    Instructor(Long id, String name) {
+    public Instructor(Long id, String name) {
         super(id, name);
     }
 

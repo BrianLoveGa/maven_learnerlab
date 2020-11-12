@@ -1,4 +1,4 @@
-package com.github.curriculeon;
+package com.github.curriculeon.models;
 
 public final class Students extends People<Student>{
     // eager implementation

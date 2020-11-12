@@ -1,5 +1,7 @@
 package com.github.curriculeon;
 
+import com.github.curriculeon.models.Instructors;
+import com.github.curriculeon.models.Person;
 import org.junit.Assert;
 import org.junit.Test;
 

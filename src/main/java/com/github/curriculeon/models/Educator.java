@@ -1,4 +1,7 @@
-package com.github.curriculeon;
+package com.github.curriculeon.models;
+
+import com.github.curriculeon.interfaces.Learner;
+import com.github.curriculeon.interfaces.Teacher;
 
 public enum Educator implements Teacher {
 

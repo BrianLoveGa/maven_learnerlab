@@ -1,5 +1,8 @@
 package com.github.curriculeon;
 
+import com.github.curriculeon.interfaces.Learner;
+import com.github.curriculeon.models.Person;
+import com.github.curriculeon.models.Student;
 import org.junit.Assert;
 import org.junit.Test;
 

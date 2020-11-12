@@ -1,11 +1,11 @@
-package com.github.curriculeon;
+package com.github.curriculeon.models;
 
 public class Person<Person> {
 
     private final Long id;
     private String name;
 
-    Person(Long id, String name){
+    public Person(Long id, String name){
 
         this.id = id;
         this.name = name;

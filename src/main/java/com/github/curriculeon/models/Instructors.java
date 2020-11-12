@@ -1,4 +1,4 @@
-package com.github.curriculeon;
+package com.github.curriculeon.models;
 
  public  class Instructors extends People<Instructor> {
     private static Instructors INSTANCE;

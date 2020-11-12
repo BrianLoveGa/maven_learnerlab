@@ -10,6 +10,7 @@ package com.github.curriculeon;
 //        add(new Student(1L,"Brian Loveless"));
 //        add(new Student(2L,"Brandt Campbell"));
 
+import com.github.curriculeon.models.*;
 import org.junit.Assert;
 import org.junit.Test;
 

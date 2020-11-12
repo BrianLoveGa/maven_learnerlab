@@ -1,10 +1,12 @@
-package com.github.curriculeon;
+package com.github.curriculeon.models;
+
+import com.github.curriculeon.interfaces.Learner;
 
 public class Student extends Person implements Learner {
 
     private double totalStudyTime;
 
-    Student(Long id, String name) {
+    public Student(Long id, String name) {
         super(id, name);
     }
 
